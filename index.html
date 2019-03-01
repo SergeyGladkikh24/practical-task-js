@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Сортировка данных</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	 <div class="sort-data">
+      <h1 class="sort-data__header">Сортировка данных таблицы</h1>
+      <div class="sort-data__load">
+        <button class="btn btn_load first">Загрузить большой объем данных</button>
+        <button class="btn btn_load second">Загрузить маленький объем данных</button>
+      </div>
+      <div class="sort-data_error"></div>
+      <div class="sort-data__search search hide">
+        <label for="search" class="search__label">Поиск: </label>
+        <input type="text" class="search__input" id="search">
+        <button class="btn search__btn">Найти</button>
+      </div>
+      <table class="sort-data__table"></table>
+      <div class="sort-data__nav hide">
+        <button class="btn btn_prev">Назад</button>
+        <span class="sort-data__page-number"></span>
+        <button class="btn btn_next">Вперед</button>
+      </div>
+      <div class="sort-data__view contacts hide">
+        <p>Выбран пользователь <span class="contact__text contact__name"></span></p>
+        <div>Описание:<br>
+          <textarea class="contact__descr" rows="3"></textarea>
+        </div>
+        <p>Адрес проживания: <span class="contact__text contact__address"></span></p>
+        <p>Город: <span class="contact__text contact__city"></span></p>
+        <p>Провинция/штат: <span class="contact__text contact__state"></span></p>
+        <p>Индекс: <span class="contact__text contact__index"></span></p>
+      </div>
+      <div class="sort-data__loading">
+      	<div class="progress-bar_loading blue stripes">
+    		<span style="width: 100%"></span>
+		</div>
+      </div>
+    </div>
+     <script data-require="jquery@3.0.0" data-semver="3.0.0" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
