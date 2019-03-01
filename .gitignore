@@ -1,0 +1,9 @@
+# Folders to ignore
+bower_components
+dist
+build
+
+
+# Node.JS
+node_modules
+npm-debug.log
