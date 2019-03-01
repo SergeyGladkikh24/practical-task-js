@@ -19,7 +19,7 @@ window.onload = () =>{
 
 	function startLoadFirst(){
 		$('.btn_load.second').off('click',startLoadSecond);
-		var url = 'https://www.filltext.com/?rows=1000&id={number|1000}&firstName={firstName}&delay=3&lastName={lastName}&email={email}&phone={phone|(xxx)xxx-xx-xx}&adress={addressObject}&description={lorem|32}';
+		var url = 'http://www.filltext.com/?rows=1000&id={number|1000}&firstName={firstName}&delay=3&lastName={lastName}&email={email}&phone={phone|(xxx)xxx-xx-xx}&adress={addressObject}&description={lorem|32}';
 		getData(url);
 
 	}
@@ -29,7 +29,7 @@ window.onload = () =>{
 
 	function startLoadSecond(){
 		$('.btn_load.first').off('click',startLoadSecond);
-		var url = 'https://www.filltext.com/?rows=32&id={number|1000}&firstName={firstName}&lastName={lastName}&email={email}&phone={phone|(xxx)xxx-xx-xx}&adress={addressObject}&description={lorem|32}';
+		var url = 'http://www.filltext.com/?rows=32&id={number|1000}&firstName={firstName}&lastName={lastName}&email={email}&phone={phone|(xxx)xxx-xx-xx}&adress={addressObject}&description={lorem|32}';
 		getData(url);
 	}
 
@@ -39,7 +39,7 @@ window.onload = () =>{
 	function getData(url){
 		$.ajax({
 			url: url,
-			type:'GET',
+			type:'POST',
 			beforeSend:funcBefore,
 			success:funcSuccess
 		}).catch(function(err){
