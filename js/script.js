@@ -39,7 +39,7 @@ window.onload = () =>{
 	function getData(url){
 		$.ajax({
 			url: url,
-			type:'POST',
+			type:'GET',
 			beforeSend:funcBefore,
 			success:funcSuccess
 		}).catch(function(err){
